@@ -1,0 +1,22 @@
+{
+  "name": "@dialogscript/core",
+  "description": "Safe, Fast, and Extensible conversation script engine",
+  "version": "0.2.0",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cathiecode/dialogscript.git"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "cathiecode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cathiecode/dialogscript/issues"
+  },
+  "homepage": "https://github.com/cathiecode/dialogscript#readme",
+  "dependencies": {
+    "eventemitter3": "^4.0.7"
+  }
+}
