@@ -1,4 +1,4 @@
-import ITag from "./ITag";
+import ITag from "./IOp";
 
 interface IScript<T> {
   id?: string;

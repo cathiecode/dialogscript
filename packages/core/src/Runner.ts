@@ -1,7 +1,7 @@
 import IRunner from "./IRunner";
 
 import ILoader from "./ILoader";
-import ITag from "./values/ITag";
+import IOp from "./values/IOp";
 import IScriptResolvable from "./values/IScriptResolvable";
 
 import Script from "./values/IScript";
@@ -48,7 +48,7 @@ export default class Runner<T> extends EventEmitter implements IRunner<T> {
     return this.state;
   }
 
-  async execTag(tag: ITag<T>): Promise<void> {
+  async execTag(tag: IOp<T>): Promise<void> {
     this.emit("willExecTag", tag);
     const tagResult = await tag.apply(this.state, this);
     if (tagResult) {

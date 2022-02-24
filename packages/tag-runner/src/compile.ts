@@ -1,6 +1,6 @@
 import { IScript } from "@dialogscript/core";
 import { ITag, ITagCompatibleState, text } from "@dialogscript/tag";
-import { ITag as IOp } from "@dialogscript/core";
+import { IOp } from "@dialogscript/core";
 import { RootToken, Tag } from "../../tag/src/token";
 
 function tagTokenToOp<T>(token: Tag, tag: ITag<T>): IOp<T> {

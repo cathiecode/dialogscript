@@ -1,7 +1,7 @@
 {
   "name": "@dialogscript/core",
   "description": "Safe, Fast, and Extensible conversation script engine",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "dist/index.js",
   "repository": {
     "type": "git",

@@ -20,6 +20,6 @@
   "homepage": "https://github.com/cathiecode/dialogscript#readme",
   "dependencies": {
     "eventemitter3": "^4.0.7",
-    "@dialogscript/core": "^0.2.0"
+    "@dialogscript/core": "^0.2.1"
   }
 }
