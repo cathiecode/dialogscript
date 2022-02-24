@@ -1,5 +1,5 @@
 {
-  "name": "@dialogscript/tag-control-flow",
+  "name": "@dialogscript/tag-runner",
   "description": "Text based script runner for DialogScript",
   "version": "0.1.0",
   "main": "dist/index.js",
@@ -9,7 +9,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "npm run build"
   },
   "author": "cathiecode",
   "license": "MIT",

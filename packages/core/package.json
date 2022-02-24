@@ -8,7 +8,8 @@
     "url": "https://github.com/cathiecode/dialogscript.git"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "npm run build"
   },
   "author": "cathiecode",
   "license": "MIT",

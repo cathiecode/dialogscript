@@ -3,9 +3,6 @@
   "author": "cathiecode",
   "license": "MIT",
   "private": "true",
-  "scripts": {
-    "build": "tsc"
-  },
   "workspaces": [
     "packages/*"
   ],
