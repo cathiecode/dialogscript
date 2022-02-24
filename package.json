@@ -1,8 +1,5 @@
 {
-  "main": "dist/index.js",
-  "author": "cathiecode",
-  "license": "MIT",
-  "private": "true",
+  "private": true,
   "workspaces": [
     "packages/*"
   ],
