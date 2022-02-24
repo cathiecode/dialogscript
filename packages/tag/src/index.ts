@@ -1,4 +1,4 @@
-import { RootToken, Tag, Text, Comment, Label, Token } from "./token";
+import { RootToken, Tag, Text, Comment, Label } from "./token";
 
 import StringReader from "./StringReader";
 import { TokenizeError } from "./error";

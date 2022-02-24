@@ -1,4 +1,4 @@
-import { IRunner, ITag as IOriginalTag } from "@dialogscript/core";
+import { IRunner } from "@dialogscript/core";
 
 export type ITagParams = {
   [key: string]: string | number | boolean | null;

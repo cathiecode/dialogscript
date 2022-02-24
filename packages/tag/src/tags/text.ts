@@ -1,4 +1,4 @@
-import ITag, { ITagParams } from "../ITag";
+import { ITagParams } from "../ITag";
 import ITagCompatibleState from "../ITagCompatibleState";
 
 const text = {
