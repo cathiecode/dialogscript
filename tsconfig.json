@@ -21,7 +21,7 @@
     "noImplicitThis": true,
     "useUnknownInCatchVariables": true,
     "alwaysStrict": true,
-    //"noUnusedLocals": true,
+    "noUnusedLocals": true,
     "noUnusedParameters": true,
     "exactOptionalPropertyTypes": true,
     "noImplicitReturns": true,
@@ -31,5 +31,6 @@
     "noPropertyAccessFromIndexSignature": true,
     "skipDefaultLibCheck": true,
     "skipLibCheck": true
-  }
+  },
+  "include": ["./src"]
 }
