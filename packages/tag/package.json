@@ -1,0 +1,25 @@
+{
+  "name": "@dialogscript/tag",
+  "description": "Text based script syntax definition for DialogScript",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cathiecode/dialogscript.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "prepare": "npm run build"
+  },
+  "author": "cathiecode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cathiecode/dialogscript/issues"
+  },
+  "homepage": "https://github.com/cathiecode/dialogscript#readme",
+  "dependencies": {
+    "eventemitter3": "^4.0.7",
+    "@dialogscript/core": "^0.2.0"
+  }
+}

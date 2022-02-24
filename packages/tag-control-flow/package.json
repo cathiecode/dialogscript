@@ -1,0 +1,25 @@
+{
+  "name": "@dialogscript/tag-runner",
+  "description": "Text based script runner for DialogScript",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cathiecode/dialogscript.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "author": "cathiecode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cathiecode/dialogscript/issues"
+  },
+  "homepage": "https://github.com/cathiecode/dialogscript#readme",
+  "dependencies": {
+    "eventemitter3": "^4.0.7",
+    "@dialogscript/core": "^0.2.0",
+    "@dialogscript/tag": "^0.1.0"
+  }
+}
