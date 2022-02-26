@@ -1,35 +1,9 @@
 {
-  "compilerOptions": {
-    "target": "es2021",
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "declaration": true,
-    "module": "commonjs",
-    "resolveJsonModule": true,
-    "maxNodeModuleJsDepth": 2, // For workspace
-    "outDir": "./dist",
-    "noEmitOnError": true,
-    "esModuleInterop": true,
-    "preserveSymlinks": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "strictBindCallApply": true,
-    "strictPropertyInitialization": true,
-    "noImplicitThis": true,
-    "useUnknownInCatchVariables": true,
-    "alwaysStrict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "exactOptionalPropertyTypes": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedIndexedAccess": true,
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "skipDefaultLibCheck": true,
-    "skipLibCheck": true
-  }
+    "files": [],
+    "references": [
+        {"path": "packages/core"},
+        {"path": "packages/tag"},
+        {"path": "packages/tag-runner"},
+        {"path": "packages/tag-control-flow"}
+    ]
 }
