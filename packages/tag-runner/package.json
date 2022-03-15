@@ -1,7 +1,7 @@
 {
   "name": "@dialogscript/tag-runner",
   "description": "Text based script runner for DialogScript",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -11,7 +11,7 @@
     "url": "https://github.com/cathiecode/dialogscript.git"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf ./dist && tsc",
     "test": "jest",
     "prepare": "npm run build"
   },
