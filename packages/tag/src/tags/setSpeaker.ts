@@ -1,4 +1,4 @@
-import ITag, { ITagParams } from "../ITag";
+import { ITagParams } from "../ITag";
 import ITagCompatibleState from "../ITagCompatibleState";
 
 const setSpeaker = {
@@ -8,6 +8,6 @@ const setSpeaker = {
     ...state,
     speaker: params["name"],
   }),
-} as ITag<ITagCompatibleState>;
+};
 
 export default setSpeaker;

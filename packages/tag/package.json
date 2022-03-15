@@ -1,7 +1,7 @@
 {
   "name": "@dialogscript/tag",
   "description": "Text based script syntax definition for DialogScript",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/index.js",
   "files": [
     "dist"
