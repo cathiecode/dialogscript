@@ -1,12 +1,45 @@
 import { IScript } from "@dialogscript/core";
-import { ITag, ITagCompatibleState, text } from "@dialogscript/tag";
+import { ITag, ITagCompatibleState, ITagParams, text } from "@dialogscript/tag";
 import { IOp } from "@dialogscript/core";
 import { RootToken, Tag } from "@dialogscript/tag/src/token";
+
+function assertTagToken<T>(token: Tag, tag: ITag<T>): ITagParams {
+  const assertedParams = { ...token.params };
+  Object.entries(tag.params).forEach(([name, defaultValue]) => {
+    if (defaultValue === undefined) {
+      return;
+    }
+    // TODO: {type: "string"} like API
+    if (defaultValue === null) {
+      if (token.params[name] === undefined) {
+        throw new Error(
+          `Tag parameter assertion failed: ${name} of ${tag.name} requires <any> but got undefined.`
+        );
+      } else {
+        return;
+      }
+    }
+    if (token.params[name] === undefined) {
+      assertedParams[name] = defaultValue;
+      return;
+    }
+    if (typeof defaultValue !== typeof token.params[name]) {
+      throw new Error(
+        `Tag parameter assertion failed: ${name} of ${
+          tag.name
+        } requires ${typeof defaultValue} but got ${typeof token.params[name]}.`
+      );
+    }
+  });
+
+  return assertedParams;
+}
 
 function tagTokenToOp<T>(token: Tag, tag: ITag<T>): IOp<T> {
   return {
     name: tag.name,
-    apply: (state, runner) => tag.exec(token.params, state, runner),
+    apply: (state, runner) =>
+      tag.exec(assertTagToken(token, tag), state, runner),
   };
 }
 
