@@ -98,7 +98,7 @@ function consumeSpaceAndLineFeed(reader: StringReader): void {
 }
 
 function isIdCharacter(character: string): boolean {
-  return /[0-9a-zA-Z-_$]/.test(character); // FIXME: Unicode対応など
+  return !/[\[\]\(\)"'=\-\/\.<>\s]/.test(character);
 }
 
 function tokenizeId(reader: StringReader): string | undefined {
@@ -122,7 +122,7 @@ function tokenizeId(reader: StringReader): string | undefined {
 }
 
 function isNumberString(character: string): boolean {
-  return /[0-9]/.test(character); // FIXME: Unicode対応など
+  return /[0-9]/.test(character);
 }
 
 function tokenizeNumber(reader: StringReader): number | undefined {
