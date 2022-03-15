@@ -6,7 +6,7 @@ class TagRunner<T extends ITagCompatibleState> extends Runner<T> {
   constructor(
     script: IScriptResolvable,
     initialState: T,
-    fetch: () => Promise<string>,
+    fetch: (scriptId: string) => Promise<string>,
     tags: ITag<T>[]
   ) {
     super(script, initialState, new TagLoader(fetch, tags));
