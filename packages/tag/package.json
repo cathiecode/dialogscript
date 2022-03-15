@@ -1,7 +1,7 @@
 {
   "name": "@dialogscript/tag",
   "description": "Text based script syntax definition for DialogScript",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -23,6 +23,6 @@
   "homepage": "https://github.com/cathiecode/dialogscript#readme",
   "dependencies": {
     "eventemitter3": "^4.0.7",
-    "@dialogscript/core": "^0.2.1"
+    "@dialogscript/core": "^0.2.3"
   }
 }
