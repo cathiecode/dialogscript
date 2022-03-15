@@ -1,4 +1,4 @@
-import ScriptResolvable from "@dialogscript/core/src/values/ScriptResolvable";
+import { ScriptResolvable } from "@dialogscript/core";
 import { ITagParams } from "@dialogscript/tag";
 import { IRunner } from "@dialogscript/core";
 
